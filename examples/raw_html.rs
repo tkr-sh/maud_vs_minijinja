@@ -21,7 +21,7 @@ fn maud() -> String {
             }
             body {
                 h1 {"Welcome to the 77 Line HTML Example"}
-                p {"This is a basic HTML page with 100 lines of code."}
+                p {"This is a basic HTML page with 77 lines of code."}
                 h2 {"Section 1"}
                 p {"This is the first section of the page."}
                 ul {
