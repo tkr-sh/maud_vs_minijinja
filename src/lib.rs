@@ -34,5 +34,17 @@ where
     let maud = get_mean_execution_time(f);
     let minijinja = get_mean_execution_time(g);
 
-    println!("\x1B[1mMaud\x1b[0m: {maud:#?}\n\x1B[1mMiniJinja\x1B[0m: {minijinja:#?}");
+    println!("\x1B[1mMaud\x1b[0m: {maud:?}\n\x1B[1mMiniJinja\x1B[0m: {minijinja:?}");
+
+    if maud < minijinja {
+        println!(
+            "\x1B[1mMaud\x1B[0m was faster by \x1b[1m{:?}\x1b[0m!!!",
+            minijinja - maud
+        );
+    } else {
+        println!(
+            "\x1B[1mMiniJinja\x1B[0m was faster by \x1b[1m{:?}\x1b[0m!!!",
+            minijinja - maud
+        );
+    }
 }
